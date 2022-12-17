@@ -8,7 +8,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body>
+        <div className='grid'>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }

@@ -1,5 +1,5 @@
 export default function SignIn() {
   return (
-    <h1>Signin page</h1>
+    <h1>Welcome to Signin page</h1>
   )
 }

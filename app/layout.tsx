@@ -1,4 +1,5 @@
 import './globals.css'
+import ReduxProvider from '../components/states/provider'
 
 export default function RootLayout({
   children,
@@ -9,9 +10,12 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <div className='grid'>
-          {children}
-        </div>
+        {/* Put redux provider on top for states management */}
+        <ReduxProvider>
+          <div className='grid'>
+            {children}
+          </div>
+        </ReduxProvider>
       </body>
     </html>
   )
